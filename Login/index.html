@@ -11,31 +11,45 @@
     <body>
         <header>
             <div class="header">
-                <div class="logo">
-                    <label>Login</label>
-            <nav class="nav">
-                <a href="#">Inicio</a>
-                <a href="#">Contacto</a>
-                <a href="#">Ayuda</a>
-            </nav>
+                    <div class="logo">
+                        <label>Login</label>
+                    </div>
+                <nav class="nav">
+                    <a href="#">Inicio</a>
+                    <a href="#">Contacto</a>
+                    <a href="#">Ayuda</a>
+                </nav>
+            </div>
         </header>
-        <form action="" class="formulario">
-            <div class="emailForm">
-                <label class="emailLabel">Email:</label>
-                <input type="email" name="" id="email">
-                <p class="campoCorrecto">Mail Valido</p>
-                <p class="campoIncorrecto">Complete los campos correctamente</p>
-            </div>
-            <div class="passwordForm">
-                <label class="passwordLabel">Password:</label>
-                <input type="password" name="" id="password">
-                <p class="campoCorrecto">Password Validas</p>
-                <p class="campoIncorrecto">Complete los campos correctamente</p>
-            </div>
-            <input type="button" value="Iniciar Sesion" id="botonInicio">
-        </form>
+        <main>
+            <form class="formulario">
+                <div class="formGrupo" id="grupoEmail">
+                    <label for="mail" class="formLabel">Email:</label>
+                    <div class="formGrupo-Input">
+                        <input type="email" class="formInput" name="email" id="email" placeholder="correo@correo.com">
+                    </div>
+                    <p class="campoIncorrecto">Complete los campos correctamente</p>
+                </div>
+                <div class="formGrupo" id="grupoPassword">
+                    <label for="contrasena" class="formLabel">Password:</label>
+                    <div class="formGrupo-Input">
+                        <input type="password" class="formInput" name="password" id="password" placeholder="********">
+                    </div>
+                    <p class="campoIncorrecto">Complete los campos correctamente</p>
+                </div>
+                <div class="formMensaje" id="formMensaje">
+                    <p>Error: Ingrese un mail o una contrasena valida</p>
+                </div>
+                <div class="formGrupo formGrupo-btn-iniciar">
+                    <button type="submit" class="formBtn">Iniciar Sesion</button>
+                    <p class="formMensaje-exito" id="formMensaje-exito">Inicio de sesion exitoso!!</p>
+                </div>
+                
+            </form>
+            
+        </main>
         <footer class="pieDePagina">
-            <label>@2022 | Renzo Campisi - Todos los derechos reservados</label>
+            <label>@2022 | Renzo Campisi - Parcial 02 - Todos los derechos reservados</label>
         </footer>
         <script src="app.js"></script>
     </body>
