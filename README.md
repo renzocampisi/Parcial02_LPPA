@@ -1,1 +1,1 @@
-# Recuperatorio_Parcial02
+# Parcial02_LPPA
